@@ -1,0 +1,40 @@
+{
+    "name": "superformula/craft-composer",
+    "description": "Superformula's composer plugin",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craft composer"
+    ],
+    "support": {
+        "docs": "https://github.com/scottbaggett/craft-composer/blob/master/README.md",
+        "issues": "https://github.com/scottbaggett/craft-composer/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scott Baggett",
+            "homepage": "superformula.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.19"
+    },
+    "autoload": {
+        "psr-4": {
+          "superformula\\craftcomposer\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Craft Composer",
+        "handle": "craft-composer",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/scottbaggett/craft-composer/master/CHANGELOG.md",
+        "class": "superformula\\craftcomposer\\CraftComposer"
+    }
+}
