@@ -82,7 +82,7 @@ class CraftComposer extends Plugin
             UrlManager::class,
             UrlManager::EVENT_REGISTER_SITE_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
-                $event->rules['siteActionTrigger1'] = 'craft-composer/composer';
+                $event->rules['siteActionTrigger1'] = 'craft-composer/ajax';
             }
         );
 
@@ -91,7 +91,7 @@ class CraftComposer extends Plugin
             UrlManager::class,
             UrlManager::EVENT_REGISTER_CP_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
-                $event->rules['cpActionTrigger1'] = 'craft-composer/composer/do-something';
+                $event->rules['cpActionTrigger1'] = 'craft-composer/ajax/do-something';
             }
         );
 

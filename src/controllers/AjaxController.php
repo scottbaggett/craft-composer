@@ -35,7 +35,7 @@ use craft\web\Controller;
  * @package   CraftComposer
  * @since     1.0.0
  */
-class ComposerController extends Controller
+class AjaxController extends Controller
 {
 
     // Protected Properties
@@ -46,33 +46,33 @@ class ComposerController extends Controller
      *         The actions must be in 'kebab-case'
      * @access protected
      */
-    protected $allowAnonymous = ['index', 'do-something'];
+    protected $allowAnonymous = ['index', 'comments'];
 
     // Public Methods
     // =========================================================================
 
     /**
      * Handle a request going to our plugin's index action URL,
-     * e.g.: actions/craft-composer/composer
+     * e.g.: actions/craft-composer/actions
      *
      * @return mixed
      */
     public function actionIndex()
     {
-        $result = 'Welcome to the ComposerController actionIndex() method';
+        $result = 'Welcome to the ActionsController actionIndex() method';
 
         return $result;
     }
 
     /**
      * Handle a request going to our plugin's actionDoSomething URL,
-     * e.g.: actions/craft-composer/composer/do-something
+     * e.g.: actions/craft-composer/ajax/ccomments
      *
      * @return mixed
      */
-    public function actionDoSomething()
+    public function actionSubmitComment()
     {
-        $result = 'Welcome to the ComposerController actionDoSomething() method';
+        $result = 'Welcome to the AJAX Controller actionSubmitComment() method';
 
         return $result;
     }
